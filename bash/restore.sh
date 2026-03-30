@@ -2,5 +2,5 @@
 . lib/extract.sh
 
 #chrome_restore
-extract
+#extract
 #sync_restore

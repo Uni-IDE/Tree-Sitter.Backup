@@ -9,5 +9,3 @@
 
 detect_backup
 #dependency
-
-echo $bac $compress_type

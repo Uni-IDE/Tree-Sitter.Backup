@@ -6,7 +6,7 @@ detect_backup_file(){
 	bac_name=$chromeshuttle/bac/$this
 
 	if [ -f $bac_name* ];then
-		file=`basename -- $bac_name*`
+		file=`basename $bac_name*` >/dev/null 2>&1
 		last_part="${file#*.}"
 		compress_type="${last_part#*.}"
 		backup_exist=true
