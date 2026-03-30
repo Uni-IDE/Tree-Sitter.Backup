@@ -9,20 +9,19 @@ make_dir(){
 	done
 }
 
-sync_dir(){
+sync_dir_to(){
 	for d in ${dirs[@]}; do
 		rsync -av --progress --delete ~/$d $data/`dirname $d`
 	done
 }
 
-sync_profile(){
+sync_profile_to(){
 	rsync -av ~/.profile $data/
 }
 
-syncf(){
-	make_dir
-	sync_dir
+sync_backup(){
+	make_dir_to
+	sync_dir_to
 	sync_profile
 }
 
-syncf
