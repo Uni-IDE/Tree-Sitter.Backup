@@ -1,7 +1,9 @@
 
 extract_tar(){
-	if [ ! -d $home/$this ];then
-		tar xfv $bac -C ~ 
+	mkdir -p ~/$this
+
+	if [ ! -d $home/$this/data ];then
+		tar xfv $bac -C ~/$this/ 
 	else
 		echo "Already Extracted, run with \`-c\` to clean old backup"
 	fi
