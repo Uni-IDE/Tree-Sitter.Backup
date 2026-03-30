@@ -1,6 +1,7 @@
 . lib/var
-. lib/dependency.sh
-. lib/sync.sh
-. lib/chromeOS.sh
+#. lib/dependency.sh
+#. lib/sync.sh
+#. lib/chromeOS.sh
 
 #dependency
+#detect_chromeos

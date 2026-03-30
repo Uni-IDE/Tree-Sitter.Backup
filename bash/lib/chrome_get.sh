@@ -1,6 +1,6 @@
 . lib/var
 
-detect_existing_backup(){
+detect_chromeos(){
 	bac_name=$chromeshuttle/bac/$this
 
 	try=$bac_name.tar
@@ -10,4 +10,3 @@ detect_existing_backup(){
 	fi
 }
 
-detect_existing_backup
