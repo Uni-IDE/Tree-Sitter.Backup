@@ -5,3 +5,5 @@ this=Tree-Sitter.Backup
 data=$home/$this/data
 
 pkg=$data/pkg
+
+chromebac=/mnt/chromeos/removable/shuttle
