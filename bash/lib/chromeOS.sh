@@ -1,5 +1,4 @@
 . lib/var
-. lib/compress.sh
 
 chrome_shuttle(){
 	# https://unix.stackexchange.com/questions/102211/rsync-ignore-owner-group-time-and-perms
@@ -8,7 +7,6 @@ chrome_shuttle(){
 }
 
 chrome_bac(){
-	compress
 	chrome_shuttle
 }
 
