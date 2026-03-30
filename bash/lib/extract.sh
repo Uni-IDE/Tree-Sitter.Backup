@@ -1,9 +1,7 @@
-. lib/var
 
 extract_tar(){
-	backup=$home/$this 
 	if [ ! -d $home/$this ];then
-		tar xfv $backup.tar -C $home/
+		tar xfv $bac -C $home/
 	else
 		echo "Already Extracted, run with \`-c\` to clean old backup"
 	fi
@@ -13,7 +11,7 @@ extract_7zip(){
 	echo do
 }
 
-doextract()
+extract(){
 	# Which type?
 	if [ $compress_type == "tar" ];then
 		extract_tar
@@ -22,7 +20,3 @@ doextract()
 	fi
 }
 
-extract(){
-	echo $bac
-	echo $compress_type
-}

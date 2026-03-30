@@ -8,15 +8,13 @@ detect_backup_file(){
 	if [ -f $bac_name* ];then
 		file=`basename -- $bac_name*`
 		last_part="${file#*.}"
-		extension="${last_part#*.}"
-		compress_type=$extension
+		compress_type="${last_part#*.}"
 		backup_exist=true
+		bac=$bac_name.$compress_type
 	else
 		echo "backup not found"
 		backup_exist=true
 	fi
-
-	echo $compress_type
 }
 
 detect_backup(){
