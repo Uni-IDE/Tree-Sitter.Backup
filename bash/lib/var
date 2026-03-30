@@ -1,0 +1,7 @@
+home=~/
+
+this=Tree-Sitter.Backup
+
+data=$home/$this/data
+
+pkg=$data/pkg
