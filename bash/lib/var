@@ -4,6 +4,8 @@ this=Tree-Sitter.Backup
 
 data=$home/$this/data
 
-pkg=$data/pkg
+mirror=$home/$this/mirror.
+
+pkg=$mirror/pkg
 
 chromebac=/mnt/chromeos/removable/shuttle
