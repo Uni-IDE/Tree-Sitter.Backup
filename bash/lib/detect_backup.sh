@@ -1,4 +1,8 @@
-detect_chromeos(){
+detect_backup_dir(){
+	echo
+}
+
+detect_backup_file(){
 	bac_name=$chromeshuttle/bac/$this
 
 	if [ -f $bac_name* ];then
@@ -13,4 +17,9 @@ detect_chromeos(){
 	fi
 
 	echo $compress_type
+}
+
+detect_backup(){
+	detect_backup_dir
+	detect_backup_file
 }

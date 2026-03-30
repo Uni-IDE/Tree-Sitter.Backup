@@ -1,5 +1,5 @@
 . lib/var
-. lib/chrome_get.sh
+. lib/detect_backup.sh
 #. lib/dependency.sh
 #echo before
 #echo after
@@ -7,7 +7,7 @@
 #. lib/chromeOS.sh
 
 
-detect_chromeos
+detect_backup
 #dependency
 
 echo $bac $compress_type
