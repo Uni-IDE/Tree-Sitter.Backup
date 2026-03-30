@@ -1,12 +1,13 @@
 . lib/var
-echo before
 . lib/chrome_get.sh
 #. lib/dependency.sh
-echo after
+#echo before
+#echo after
 #. lib/sync.sh
 #. lib/chromeOS.sh
 
 
+detect_chromeos
 #dependency
-#detect_chromeos
 
+echo $bac $compress_type

@@ -1,5 +1,3 @@
-. lib/var
-
 chrome_shuttle(){
 	# https://unix.stackexchange.com/questions/102211/rsync-ignore-owner-group-time-and-perms
 	mkdir -p $chromeshuttle/bac

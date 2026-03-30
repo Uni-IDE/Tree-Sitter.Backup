@@ -13,5 +13,5 @@ chromeshuttle=/mnt/chromeos/removable/shuttle
 compress_type=7z
 
 # Overrides
-. my
+#. my
 
