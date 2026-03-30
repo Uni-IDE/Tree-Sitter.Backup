@@ -13,7 +13,7 @@ extract_7zip(){
 	echo do
 }
 
-extract()
+doextract()
 	# Which type?
 	if [ $compress_type == "tar" ];then
 		extract_tar
@@ -22,3 +22,7 @@ extract()
 	fi
 }
 
+extract(){
+	echo $bac
+	echo $compress_type
+}
