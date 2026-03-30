@@ -31,8 +31,6 @@ dependency(){
 	cd $old
 }
 
-dependency
-
 #https://www.google.com/search?q=bash+if+which
 #https://stackoverflow.com/questions/592620/how-can-i-check-if-a-program-exists-from-a-bash-script
 #
