@@ -10,7 +10,7 @@ pkg=$mirror/pkg
 
 chromeshuttle=/mnt/chromeos/removable/shuttle
 
-zip_type=7z
+compress_type=7z
 
 # Overrides
 . my
