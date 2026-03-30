@@ -20,8 +20,8 @@ sync_profile_to(){
 }
 
 sync_backup(){
-	make_dir_to
+	make_dir
 	sync_dir_to
-	sync_profile
+	sync_profile_to
 }
 
