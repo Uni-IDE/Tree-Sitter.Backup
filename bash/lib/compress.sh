@@ -5,7 +5,7 @@ compress_tar(){
 	if [ ! -f $file ];then
 		tar cfv $file $home/$this
 	else
-		echo "Already Compressed, run with `-c` to clean old backup"
+		echo "Already Compressed, run with \`-c\` to clean old backup"
 	fi
 }
 
