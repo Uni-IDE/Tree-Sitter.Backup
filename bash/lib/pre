@@ -1,7 +1,12 @@
 . lib/var
+echo before
+. lib/chrome_get.sh
 #. lib/dependency.sh
+echo after
 #. lib/sync.sh
 #. lib/chromeOS.sh
 
+
 #dependency
 #detect_chromeos
+

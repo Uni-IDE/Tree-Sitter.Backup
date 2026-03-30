@@ -15,5 +15,3 @@ compress_type=7z
 # Overrides
 . my
 
-# detect
-. lib/chrome_get.sh

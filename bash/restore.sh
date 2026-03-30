@@ -1,5 +1,5 @@
 . lib/pre
-. lib/extract.sh
+#. lib/extract.sh
 
 #chrome_restore
 #extract
