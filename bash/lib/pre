@@ -1,2 +1,4 @@
+. lib/var
 . lib/dependency.sh
+. lib/sync.sh
 . lib/chromeOS.sh

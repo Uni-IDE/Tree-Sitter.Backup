@@ -1,6 +1,6 @@
-. lib/dependency.sh
-. lib/sync.sh
+. lib/pre
 . lib/extract.sh
 
-sync_restore
+chrome_restore
 extract
+sync_restore

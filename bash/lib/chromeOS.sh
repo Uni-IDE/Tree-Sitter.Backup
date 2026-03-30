@@ -10,5 +10,6 @@ chrome_bac(){
 	chrome_shuttle
 }
 
-chrome_bac
-
+chrome_restore(){
+	echo
+}

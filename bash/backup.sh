@@ -1,6 +1,6 @@
-. lib/dependency.sh
-. lib/sync.sh
+. lib/pre
 . lib/compress.sh
 
-compress
 sync_backup
+compress
+chrome_bac
