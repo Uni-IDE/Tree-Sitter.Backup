@@ -3,7 +3,9 @@
 compress_tar(){
 	file=$home/$this.tar 
 	if [ ! -f $file ];then
-		tar xfv $file $this
+		tar cfv $file $home/$this
+	else
+		echo "Already Compressed, run with `-c` to clean old backup"
 	fi
 }
 

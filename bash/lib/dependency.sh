@@ -3,8 +3,9 @@
 dependency(){
 	old=`pwd`
 	cd $pkg/p7zip
-	which 7zr
-	if [ ! $? -eq 0 ];then
+	
+	if ! command -v 7zr >/dev/null 2>&1
+	then
 		echo installing
 		sudo dpkg -i p7zip_16.02+dfsg-8_arm64.deb
 	fi
@@ -19,8 +20,8 @@ dependency(){
 	"rsync_3.2.7-1+deb12u4_arm64.deb"
 	)
 
-	which rsync
-	if [ ! $? -eq 0 ];then
+	if ! command -v rsync >/dev/null 2>&1
+	then
 		echo installing
 		for p in ${pkgs[@]};do
 			sudo dpkg -i $p
@@ -31,3 +32,10 @@ dependency(){
 }
 
 dependency
+
+#https://www.google.com/search?q=bash+if+which
+#https://stackoverflow.com/questions/592620/how-can-i-check-if-a-program-exists-from-a-bash-script
+#
+# Alt:
+#	which rsync
+#	if [ ! $? -eq 0 ];then
