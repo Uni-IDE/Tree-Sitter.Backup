@@ -1,5 +1,3 @@
-. lib/var
-
 detect_chromeos(){
 	bac_name=$chromeshuttle/bac/$this
 
