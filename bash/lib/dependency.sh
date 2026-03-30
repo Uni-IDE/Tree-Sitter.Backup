@@ -1,6 +1,7 @@
 . lib/var
 
 dependency(){
+	old=`pwd`
 	cd $pkg/p7zip
 	which 7zr
 	if [ ! $? -eq 0 ];then
@@ -25,6 +26,8 @@ dependency(){
 			sudo dpkg -i $p
 		done
 	fi
+
+	cd $old
 }
 
 dependency

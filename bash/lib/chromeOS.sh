@@ -1,7 +1,13 @@
 . lib/var
 
-chromebac(){
-	rsync -av --progress ~/$this $chomebac/
+chrome_shuttle(){
+	mkdir -p $chromeshuttle/bac
+	rsync -av --progress $home/$this $chromeshuttle/bac/
 }
 
-chromebac
+chrome_bac(){
+	chrome_shuttle
+}
+
+chrome_bac
+
