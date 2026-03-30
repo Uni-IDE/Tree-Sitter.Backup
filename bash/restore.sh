@@ -1,2 +1,2 @@
-. lib/dependency.sh
+#. lib/dependency.sh
 . lib/sync.sh
